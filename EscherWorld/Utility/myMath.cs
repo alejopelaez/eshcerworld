@@ -44,5 +44,22 @@ namespace EscherWorld.Utility
         {
             return Math.Sqrt(Math.Pow((o1.Position.X - o2.Position.X), 2) + Math.Pow((o1.Position.Y - o2.Position.Y), 2) + Math.Pow((o1.Position.Z - o2.Position.Z), 2));
         }
+
+        /// <summary>
+        /// Determina la distancia entre dos objetos sin tener en cuenta la coordenada z.
+        /// </summary>
+        /// <param name="o1">Primer objeto a comparar.</param>
+        /// <param name="o2">Segundo objeto a comparar.</param>
+        /// <param name="view">matirz de la vista.</param>
+        /// <returns>Distancia entre los dos.</returns>
+        public static double distanciaAparente(GameObject o1, GameObject o2, Matrix view)
+        {
+            Vector3 v1, v2;
+            //Se transforma la posición del cubo dependiendo de la posición de la camara.
+            v1 = Vector3.Transform(o1.Position, view);
+            v2 = Vector3.Transform(o2.Position, view);
+
+            return Math.Sqrt(Math.Pow((v1.X - v2.X), 2) + Math.Pow((v1.Y - v2.Y), 2));
+        }
     }
 }
