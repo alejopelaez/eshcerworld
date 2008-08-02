@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Cylinder01</Name>
     <Identity>
-      <SourceFilename>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\Content\resources\models\hole.FBX</SourceFilename>
+      <SourceFilename>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\Content\resources\models\hole.FBX</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>2.54 0 0 0 0 7.195183E-16 -2.54 0 0 2.54 7.195183E-16 0 0 0 0 1</Transform>
@@ -26,7 +26,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>07 - Default</Name>
       <Identity>
-        <SourceFilename>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\Content\resources\models\hole.FBX</SourceFilename>
+        <SourceFilename>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\Content\resources\models\hole.FBX</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

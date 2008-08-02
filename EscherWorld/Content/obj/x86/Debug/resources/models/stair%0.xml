@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>RootNode</Name>
     <Identity>
-      <SourceFilename>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\Content\resources\models\stair.FBX</SourceFilename>
+      <SourceFilename>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\Content\resources\models\stair.FBX</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -308,7 +308,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>01 - Default</Name>
       <Identity>
-        <SourceFilename>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\Content\resources\models\stair.FBX</SourceFilename>
+        <SourceFilename>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\Content\resources\models\stair.FBX</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -322,7 +322,7 @@
     <Resource ID="#Resource2" Type="Graphics:BasicMaterialContent">
       <Name>07 - Default</Name>
       <Identity>
-        <SourceFilename>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\Content\resources\models\stair.FBX</SourceFilename>
+        <SourceFilename>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\Content\resources\models\stair.FBX</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

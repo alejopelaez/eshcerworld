@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\cursor.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\cursor.xnb</Output>
       <Time>2008-06-03T10:13:29.609375-05:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\cursor_rotate.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\cursor_rotate.xnb</Output>
       <Time>2008-06-03T18:13:22.515625-05:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\actor.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\actor.xnb</Output>
       <Time>2006-04-09T04:17:42-05:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\block.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\block.xnb</Output>
       <Time>2006-04-09T02:14:06-05:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\delete.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\delete.xnb</Output>
       <Time>2006-04-09T05:37:04-05:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\hole.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\hole.xnb</Output>
       <Time>2006-05-05T08:54:10-05:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\jump.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\jump.xnb</Output>
       <Time>2006-08-08T10:41:48-05:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\exit.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\exit.xnb</Output>
       <Time>2006-04-09T01:19:34-05:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\actorOn.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\actorOn.xnb</Output>
       <Time>2006-04-09T04:17:08-05:00</Time>
     </Item>
     <Item>
@@ -88,7 +88,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\blockOn.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\blockOn.xnb</Output>
       <Time>2006-04-09T02:13:24-05:00</Time>
     </Item>
     <Item>
@@ -97,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\deleteOn.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\deleteOn.xnb</Output>
       <Time>2006-04-09T05:36:20-05:00</Time>
     </Item>
     <Item>
@@ -106,7 +106,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\exitOn.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\exitOn.xnb</Output>
       <Time>2006-04-09T01:17:58-05:00</Time>
     </Item>
     <Item>
@@ -115,7 +115,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\holeOn.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\holeOn.xnb</Output>
       <Time>2006-05-05T08:53:22-05:00</Time>
     </Item>
     <Item>
@@ -124,7 +124,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\jumpOn.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\jumpOn.xnb</Output>
       <Time>2006-08-08T10:41:56-05:00</Time>
     </Item>
     <Item>
@@ -133,7 +133,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\stairsOff.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\stairsOff.xnb</Output>
       <Time>2008-06-05T17:20:39.609375-05:00</Time>
     </Item>
     <Item>
@@ -142,7 +142,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\stairsOn.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\textures\stairsOn.xnb</Output>
       <Time>2008-06-05T17:20:39.625-05:00</Time>
     </Item>
     <Item>
@@ -151,11 +151,37 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\models\stair.xnb</Output>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\models\stair.xnb</Output>
       <Time>2008-06-16T11:46:52.375-05:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\resources\models\stair%0.xml</Key>
-        <Value>2008-06-16T11:47:39.09375-05:00</Value>
+        <Value>2008-08-02T11:45:46.484375-05:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>resources\models\hole.FBX</Source>
+      <Name>resources\models\hole</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\models\hole.xnb</Output>
+      <Time>2008-06-16T11:52:24.015625-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\resources\models\hole%0.xml</Key>
+        <Value>2008-08-02T11:45:46.640625-05:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>resources\models\jump.FBX</Source>
+      <Name>resources\models\jump</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\models\jump.xnb</Output>
+      <Time>2008-06-16T11:54:56.21875-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\resources\models\jump%0.xml</Key>
+        <Value>2008-08-02T11:45:46.6875-05:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -167,35 +193,9 @@
     </Item>
     <Item>
       <Source>resources\models\hole.FBX</Source>
-      <Name>resources\models\hole</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\models\hole.xnb</Output>
-      <Time>2008-06-16T11:52:24.015625-05:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\resources\models\hole%1.xml</Key>
-        <Value>2008-06-16T12:00:54.140625-05:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>resources\models\jump.FBX</Source>
-      <Name>resources\models\jump</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\resources\models\jump.xnb</Output>
-      <Time>2008-06-16T11:54:56.21875-05:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\resources\models\jump%0.xml</Key>
-        <Value>2008-06-16T12:00:54.359375-05:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>resources\models\hole.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>obj\x86\Debug\resources\models\hole%1.xml</Output>
+      <Output>obj\x86\Debug\resources\models\hole%0.xml</Output>
       <Time>2008-06-16T11:52:24.015625-05:00</Time>
     </Item>
     <Item>
@@ -209,10 +209,10 @@
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <BuildConfiguration>Debug</BuildConfiguration>
-      <RootDirectory>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\Content\</RootDirectory>
-      <LoggerRootDirectory>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\</LoggerRootDirectory>
-      <IntermediateDirectory>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>D:\Alejo\Programación\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\Content\</RootDirectory>
+      <LoggerRootDirectory>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\Alejo\Programacion\C#\EscherWorld\EscherWorld\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
