@@ -110,7 +110,6 @@ namespace EscherWorld.Graphics
                 posicion.Z = 20 * (float)Math.Cos(angleYZ) * (float)Math.Cos(angleXZ);
                 setCamera();
             }
-            effect.View = viewMatrix;
         }
 
         /// <summary>
