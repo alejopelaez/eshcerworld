@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C# Express 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscherWorld", "EscherWorld\EscherWorld.csproj", "{5F22A6B0-CDEA-4F5A-B164-778EE51856D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F22A6B0-CDEA-4F5A-B164-778EE51856D5}.Debug|x86.ActiveCfg = Debug|x86
+		{5F22A6B0-CDEA-4F5A-B164-778EE51856D5}.Debug|x86.Build.0 = Debug|x86
+		{5F22A6B0-CDEA-4F5A-B164-778EE51856D5}.Release|x86.ActiveCfg = Release|x86
+		{5F22A6B0-CDEA-4F5A-B164-778EE51856D5}.Release|x86.Build.0 = Release|x86
+		{AF5AEA00-8482-4973-A616-011F3BB0268A}.Debug|x86.ActiveCfg = Debug|x86
+		{AF5AEA00-8482-4973-A616-011F3BB0268A}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
