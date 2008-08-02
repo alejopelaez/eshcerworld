@@ -16,6 +16,8 @@ namespace EscherWorld.Objetos
         private IndexBuffer iBufferCubo, iBufferLineas;
         private int[] indiceCubo;
         private List<int> indiceLineas;
+        //Arreglo que guarda los cubos cercanos a este, para aumentar la eficiencia en ciertos calculos.
+        private List<Cubo> cubosAdyacentes;
 
         #region Constructores
         /// <summary>
@@ -116,6 +118,8 @@ namespace EscherWorld.Objetos
         /// </summary>
         public override void  Initialize()
         {
+            base.Initialize();
+
             //El cubo empieza sin hueco ni jumper.
             hole = null;
             jumper = null;
@@ -140,8 +144,10 @@ namespace EscherWorld.Objetos
 
             //Bounding box del cubo.
             boundingBox = BoundingBox.CreateFromPoints(vertices);
+            
+            //Lista con los cubos adyacentes a este, ayuda a opimizar calculos.
+            cubosAdyacentes = new List<Cubo>();
 
-            base.Initialize();
             setVertices();
         }
 
@@ -188,7 +194,7 @@ namespace EscherWorld.Objetos
             //Crea el indice de los vertices de las lineas.
             for(int i = 0; i < NUM_VERTICES; i++)
             {
-                for (int j = 0; j < NUM_VERTICES; j++)
+                for (int j = i; j < NUM_VERTICES; j++)
                 {
                     if (vertexLineas[i] != vertexLineas[j])
                     {
@@ -224,17 +230,6 @@ namespace EscherWorld.Objetos
         /// <param name="j">Indice del segundo vertice.</param>
         public void dibujarLinea(List<VertexPositionColor> vertexLineas, int i, int j)
         {
-            //Posiciona los dos vertices en espacio del mundo.
-            Matrix world = Matrix.CreateScale(size) * Matrix.CreateTranslation(position);
-            Vector3 v1 = Vector3.Transform(vertexLineas[i].Position, world);
-            Vector3 v2 = Vector3.Transform(vertexLineas[j].Position, world);
-
-            //Crea un rayo desde el vertice 1 al 2.
-            //El segundo rayo es para comprobar que si choque el rayo y no solo un punto
-            //(es el mismo rayo pero empezando un poco mas adelante..
-            Ray r1 = new Ray(v1, Vector3.Normalize(v2 - v1));
-            Ray r2 = new Ray(r1.Position + Vector3.Normalize(v2 - v1) / 100f, Vector3.Normalize(v2 - v1));
-
             //Distancia a la cual se choca el rayo con el cubo
             float distancia = 0;
 
@@ -242,6 +237,22 @@ namespace EscherWorld.Objetos
             {
                 if (c != this && myMath.distanciaEntreObjetos(this, c) <= 4)
                 {
+                    //Posiciona los dos vertices en espacio del mundo.
+                    Matrix world = Matrix.CreateScale(size) * Matrix.CreateTranslation(position);
+                    Vector3 v1 = Vector3.Transform(vertexLineas[i].Position, world);
+                    Vector3 v2 = Vector3.Transform(vertexLineas[j].Position, world);
+
+                    //Crea un rayo desde el vertice 1 al 2.
+                    //El segundo rayo es para comprobar que si choque el rayo y no solo un punto
+                    //(es el mismo rayo pero empezando un poco mas adelante.
+                    Ray r1 = new Ray(v1, Vector3.Normalize(v2 - v1));
+                    Ray r2 = new Ray(r1.Position + Vector3.Normalize(v2 - v1) / 100f, Vector3.Normalize(v2 - v1));
+
+                    //Añade el cubo a la lista
+                    if (!cubosAdyacentes.Contains(c))
+                        cubosAdyacentes.Add(c);
+
+                    //Mira si los vertices intersecan al otro cubo.
                     if (myMath.intersectObject(c, r2, out distancia) && myMath.intersectObject(c, r1, out distancia) && distancia >= 0f && distancia < 4f)
                     {
                         Vector3 nuevo = r1.Position + (r1.Direction * distancia);
@@ -320,7 +331,7 @@ namespace EscherWorld.Objetos
             //Prepara el device
             GraphicsDevice.VertexDeclaration = new VertexDeclaration(GraphicsDevice, VertexPositionColor.VertexElements);
 
-            effect.World = Matrix.CreateScale(size) * Matrix.CreateTranslation(position);
+            effect.World = Matrix.CreateScale(size) * Matrix.CreateTranslation(position) * ((Engine)Game).WorldMatrix;
             effect.Begin();
             foreach (EffectPass pass in effect.CurrentTechnique.Passes)
             {
