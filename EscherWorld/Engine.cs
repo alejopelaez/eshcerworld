@@ -156,7 +156,7 @@ namespace EscherWorld
         /// <param name="size">Tamaño del cubo.</param>
         public void crearCubo(int x, int y, int z)
         {
-            Vector3 position = new Vector3(x, y, z);
+            Vector3 position = new Vector3(myMath.roundTo(x, SIZE_CUBO * 2), myMath.roundTo(y, SIZE_CUBO * 2), myMath.roundTo(z, SIZE_CUBO * 2));
             foreach (GameObject o in Components)
             {
                 if (o.Position == position)
@@ -540,11 +540,6 @@ namespace EscherWorld
                             mouse.Y = 0;
                         if (mouse.CurrentState.Y < 0)
                             mouse.Y = GraphicsDevice.Viewport.Height;
-
-                        foreach (Cubo c in cubos)
-                        {
-                            c.setContorno();
-                        }
                     }
                     //Retorna el cursor al estado del cursor al soltar click derecho.
                     if (!mouse.isPressed(myMouse.MouseButtons.RightClick) && mouse.wasPressed(myMouse.MouseButtons.RightClick))
@@ -561,6 +556,15 @@ namespace EscherWorld
             //Para pausar
             if (keyboard.isKeyPressed(Keys.P) && !keyboard.wasKeyPressed(Keys.P))
                 paused = !paused;
+
+            foreach (GameObject o1 in Components)
+            {
+                foreach (GameObject o2 in Components)
+                {
+                    if (o1 != o2)
+                        myMath.distanciaAparente(o1, o2, ViewMatrix);
+                }
+            }
 
             base.Update(gameTime);
         }
