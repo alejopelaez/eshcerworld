@@ -55,11 +55,26 @@ namespace EscherWorld.Utility
         public static double distanciaAparente(GameObject o1, GameObject o2, Matrix view)
         {
             Vector3 v1, v2;
-            //Se transforma la posición del cubo dependiendo de la posición de la camara.
+            //Se transforma la posición de los cubo dependiendo de la posición de la camara.
             v1 = Vector3.Transform(o1.Position, view);
             v2 = Vector3.Transform(o2.Position, view);
 
             return Math.Sqrt(Math.Pow((v1.X - v2.X), 2) + Math.Pow((v1.Y - v2.Y), 2));
+        }
+
+        /// <summary>
+        /// Método que redondea un número a el valor mas cercano multiplo de b.
+        /// </summary>
+        /// <param name="a">Número que se desea redondear.</param>
+        /// <param name="b">Número al cual se desea redondear el valor a uno de sus multiplos.</param>
+        /// <returns></returns>
+        public static int roundTo(double a, int b)
+        {
+            if (a % b >= b/2)
+                a += b - (a % b);
+            else
+                a -= (a % b);
+            return (int)a;
         }
     }
 }
