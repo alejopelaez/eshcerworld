@@ -111,6 +111,15 @@ namespace EscherWorld.Objetos
         {
             get { return indiceCubo; }
         }
+
+        /// <summary>
+        /// Obtiene los cubos adyacentes a este.
+        /// </summary>
+        public List<Cubo> CubosAdyacentes
+        {
+            get { return cubosAdyacentes; }
+        }
+
         #endregion
 
         /// <summary>
@@ -151,6 +160,7 @@ namespace EscherWorld.Objetos
             setVertices();
         }
 
+        #region Métodos para dibujar el contorno de los cubos
         /// <summary>
         /// Asigna los vertices del cubo al igual que los indices para dibujarlo.
         /// </summary>
@@ -248,7 +258,7 @@ namespace EscherWorld.Objetos
                     Ray r1 = new Ray(v1, Vector3.Normalize(v2 - v1));
                     Ray r2 = new Ray(r1.Position + Vector3.Normalize(v2 - v1) / 100f, Vector3.Normalize(v2 - v1));
 
-                    //Añade el cubo a la lista
+                    //Añade el cubo a la lista, si este no estaba ya.
                     if (!cubosAdyacentes.Contains(c))
                         cubosAdyacentes.Add(c);
 
@@ -276,6 +286,17 @@ namespace EscherWorld.Objetos
             }
             indiceLineas.Add(i);
             indiceLineas.Add(j);
+        }
+        #endregion
+
+        /// <summary>
+        /// Remueve el cubo deseado de la lista de cubos adyacentes.
+        /// </summary>
+        /// <param name="c"></param>
+        public void removeCuboFromAdyacentes(Cubo c)
+        {
+            if (cubosAdyacentes.Contains(c))
+                cubosAdyacentes.Remove(c);
         }
 
         /// <summary>

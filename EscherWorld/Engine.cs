@@ -166,10 +166,11 @@ namespace EscherWorld
             cubos.Add(c);
             Components.Add(c);
 
-            foreach (GameObject o in Components)
+            //Solo se vuelve a mirar que contorno deben tener los cubos adyacentes a este.
+            if (c.CubosAdyacentes != null)
             {
-                if (o is Cubo && ((Cubo)o) != c)
-                    ((Cubo)o).setContorno();
+                foreach (Cubo o in c.CubosAdyacentes)
+                    o.setContorno();
             }
         }
 
@@ -494,16 +495,18 @@ namespace EscherWorld
                                 //En el caso que sea un cubo el objeto removido...
                                 if (seleccionado is Cubo)
                                 {
+                                    
                                     cubos.Remove((Cubo)seleccionado);
                                     if (((Cubo)seleccionado).Hole != null)
                                         Components.Remove(((Cubo)seleccionado).Hole);
                                     if (((Cubo)seleccionado).Jumper != null)
                                         Components.Remove(((Cubo)seleccionado).Jumper);
-                                    //Vuelve a establecer el contorno de los demas cubos.
-                                    foreach (GameObject o in Components)
+                                    
+                                    //Remueve este cubo de todos los cubos adyacentes a este.
+                                    foreach (Cubo c in ((Cubo)seleccionado).CubosAdyacentes)
                                     {
-                                        if (o is Cubo)
-                                            ((Cubo)o).setContorno();
+                                        c.removeCuboFromAdyacentes((Cubo)seleccionado);
+                                        c.setContorno();
                                     }
                                 }
                             }
